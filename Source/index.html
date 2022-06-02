@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <script src="../libary/jquery-min.js"></script>
+
+    <!-- Body -->
+    <link rel="stylesheet" href="../Common/body.css">
+    <!-- Navigation -->
+    <link rel="stylesheet" href="../Common/navigation.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="../Common/footer.css">
+    <!-- Social Media -->
+    <link rel="stylesheet" href="../external/socialMedia.css">
+    <!-- Button  -->
+    <link rel="stylesheet" href="./button.css">
+    <!-- Particular CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+
+
+
+    <!-- Scrolling effect js -->
+    <script src="../Common/scrolling.js"></script>
+
+   
+  
+
+  
+</head>
+<body>
+    <header>
+        <div class="header-text ">
+            <p>Bakery Shop, Balaju Kathmandu | Daily 9AM-9PM</p>
+   
+        </div>
+
+        <div id="header">
+
+        
+            <nav class="nav contact-page-nav">
+
+                <a href="main.html" class="logo home-page-logo">Bakery House</a>
+
+                <ul class="nav-list">
+                    <li>
+                        <a href="main.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu1.html" class="nav-link">Order</a>
+                    </li>
+                    <li>
+                        <a href="galary.html" class="nav-link">Galary</a>
+                    </li>
+                    <li>
+                        <a href="recipie.html" class="nav-link">Recipe</a>
+                    </li>
+                    <li>
+                        <a href="../about/about.html" class="nav-link">About Us</a> 
+                    </li>
+                    <li>
+                        <a href="contactus.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <a href="login.html" class="cta nav-cta"> <button class="btn-login"> Sign In </button> </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="first-container">
+            <div class="c-image">
+                <img src="../images/background/creamy.png" alt="" class="info-image">
+            </div>
+
+            <div class="info-text first-info-text">
+                <h3 class='fadeInH3'> Bakery House</h3>
+                <p class="fadeInP">We try to recarete new menu  with our professional baker and  try to give you new test  of our organixation. We try to recarete new menu  with our professional baker and  try to give you new test  of our organixation</p>
+                <a href="">
+                    <button class="btn-cta fadeInBtn">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Order Now</span>
+                      </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="second-container">
+
+        </div>
+
+        <div id="third-container">
+
+            <div class="info-text first-info-text">
+                <h3> Bakery House</h3>
+                <p>We try to recarete new menu  with our professional baker and  try to give you new test  of our organixation. We try to recarete new menu  with our professional baker and  try to give you new test  of our organixation</p>
+                <a href="">
+                    <button class="btn-cta">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Order Now</span>
+                      </button>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="fourth-container">
+            <div class="c-image">
+                <img src="../images/background/cup.png" alt="" class="info-image">
+            </div>
+            <div class="info-text first-info-text">
+                <h3> Bakery House</h3>
+                <p>We try to recarete new menu  with our professional baker and  try to give you new test  of our organixation. We try to recarete new menu  with our professional baker and  try to give you new test  of our organixation</p>
+                <a href="">
+                    <button class="btn-cta">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Order Now</span>
+                      </button>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+   
+    <footer>
+        <div id="footer-container" >
+            
+            <div class="footer-text">
+                <h1> Bakery House</h1>
+                <p>Bakery House was firstly established on 2010 to introduce the taste of love through our cake all over the world. We ar now only located on Kathmandu, Pokhara, Bhaktapur and Lalitpur. We are expanding as much as possible</p>
+                <div class="footer-social-icons">
+                    <h4 class="_14">Follow us on</h4>
+                    <ul class="social-icons">
+                        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <p>Copyright @2020 Bakery Shop. Designed By Adip</p>
+                
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        jQuery('document').ready(()=>{
+            var scrollIndex = jQuery('#second-container').offset().top;
+
+            
+
+            jQuery(window).scroll(()=>{
+                var scrollPos = jQuery(window).scrollTop();
+                console.log(scrollIndex);
+                console.log(scrollPos);
+
+                if(scrollPos>=60){
+                    jQuery('#second-container').css({
+                        'background-size' : 100 + 0.05*(scrollPos-500) + '%'
+                    })
+                }
+
+                if(scrollPos>=600){
+                    jQuery('#third-container').css({
+                        'background-size' : 100- 0.05* (scrollPos-900) + '%'
+                    });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,209 @@
+
+/* ==================================================== */
+/* <nav> navigation tag line */
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding-bottom: 15px;
+  }
+
+/* ==================================================== */
+
+
+/* Nagivation (Header) */
+header{
+  width: 100%;
+  height: 45vh;
+  background-image: url(../images/background/assortment-pieces-cake.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -350px;
+}
+
+
+
+/* nagivation (logo for project) */
+nav .logo{
+    
+    font-size: 2.1rem;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    padding-left: 50px;
+    padding-right: 50px;
+  
+}
+
+/* All nagivation Link */
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    font-family: 'Exo 2', sans-serif;
+
+
+  }
+  
+  
+  
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+    margin-left: 5rem;
+}
+  
+.nav-link{
+    margin: 0 2rem;
+    position: relative;
+}
+  
+.nav-link::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease;
+}
+  
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+  
+.nav-cta{
+    margin-top: 8px;
+    margin-right: 50px;
+    display: inline-block;
+  
+}
+
+/* Login button on nav */
+.btn-login {
+    padding: 10px 15px;
+    border: unset;
+    border-radius: 15px;
+    color: black;
+    z-index: 1;
+    background: white;
+    position: relative;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+   
+.btn-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: black;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+   
+.btn-login:hover {
+    color: white;
+    
+}
+   
+.btn-login:hover::before {
+    width: 100%;
+}
+
+/* =================================================== */
+/* =================================================== */
+
+/* Scrolling effect on navigation with  Jquery */
+
+
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    position: fixed;
+    top: 0%;
+    margin-top: 0%;
+    padding-bottom: 8px;
+    z-index: 9999;  
+  }
+  
+  .scrolling-active nav a{
+    color: #313131;
+  }
+  
+  .scrolling-active .btn-login{
+    background-color: black;
+    color: white;
+  }
+  
+  .scrolling-active .btn-login::before{
+    background-color: white;
+  }
+  .scrolling-active .btn-login:hover{
+    color: black;
+  }
+  
+  .scrolling-active .nav-link::after{
+    background-color: #313131;
+  }
+  
+/*Apply styles after scroll end*/
+
+
+
+
+/* Responsive */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  
+  
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .nav-list{
+    display: none;
+}
+
+.btn-login{
+      display: none;
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+  

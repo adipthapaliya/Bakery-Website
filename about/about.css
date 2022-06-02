@@ -1,0 +1,327 @@
+
+#first-container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+  }
+
+.c-image{
+    width: 54%;
+}
+  
+.info-image{
+  
+    width: 100%;
+    
+    }
+    
+.info-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.info-text h1{
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.info-text p{
+    font-size: 1.1rem;
+}
+
+
+/* Second Container */
+
+#second-container{
+    background-image: url(../images/background/close-up-chocolate-cookies.jpg);
+    min-height: 50vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   
+  
+  }
+
+
+  
+  .border-content{
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 80%;
+    border-width: 2px;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .border-content p{
+    color: white;
+  }
+
+
+
+/* Third Container */
+
+#third-container{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.text-section{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-section{
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+.image-section > div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section>div img:not(.image-section>div:first-child img){
+    width: 80%;
+}
+
+.image-section>div:first-child img{
+    width: 55%;
+}
+
+.text-section h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.image-info{
+    text-align: center;
+}
+
+.image-info h2{
+    font-size: 1.7rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Forth Container */
+#fourth-container{
+    background-image: url(../images/background/front-view-sweet-chocolate-cake-with-copy-space.jpg);
+    height: 50vh;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#fifth-container{
+    height: 110vh;
+    background: linear-gradient(to bottom, white 0%, white 50%, #97ac9b 50%, #97ac9b 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    height: 74%;
+    position: relative;
+    
+}
+
+.container section:first-child img{
+    width: 64%;
+    
+}
+
+.container section:last-child{
+    width: 45%;
+    min-height: 45%;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+
+.text-box{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.text-box h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #97ac9b;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1500px) {
+
+    .image-section>div img:not(.image-section>div:first-child img){
+        width: 100%;
+    }
+    
+    .image-section>div:first-child img{
+        width: 70%;
+    }
+    #fifth-container{
+        height: 110vh;
+    }
+
+    .container section:first-child img{
+        width: 64%;
+        
+    }
+
+    .container section:last-child{
+        width: 52%;
+        top: 55%;
+
+    }
+    .container{
+        width: 75%;
+    }
+       
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  
+    .image-section > div{
+        width: 32%;
+    }
+
+    
+
+    .container section:first-child img{
+        width: 80%;
+        
+    }
+
+    .container section:last-child{
+        width: 52%;
+        top: 53%;
+
+    }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    .image-section>div{
+        width: 33.3%;
+    }
+
+    .container{
+        width: 80%;
+    }
+   
+    .container section:first-child img{
+        width: 85%;
+        
+    }
+
+    .container section:last-child{
+        width: 62%;
+        height: 50%;
+        top: 53%;
+
+    }
+    
+   
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .image-section{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #fifth-container{
+        height: 90vh;
+    }
+
+    .image-section>div{
+        width: 60%;
+        margin-bottom: 35px;
+    }
+
+    .container section:first-child img{
+        width: 90%;
+        
+    }
+
+    .container section:last-child{
+        width: 67%;
+        height: 50%;
+        top: 50%;
+        left: 40%;
+        
+
+    }
+    
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    #fifth-container{
+        height: 80vh;
+    }
+
+    .container section:first-child img{
+        width: 95%;
+        
+    }
+
+    .container section:last-child{
+        width: 70%;
+        height: 50%;
+        top: 45%;
+        left: 35%;
+        
+
+    }
+}
+
+
+
+
